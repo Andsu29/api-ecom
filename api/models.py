@@ -8,7 +8,7 @@ class Products(models.Model):
     marca = models.CharField(max_length=255, null=True, blank=True)
     modelo = models.CharField(max_length=255, null=True, blank=True)
     codpro = models.CharField(max_length=255, null=True, blank=True)
-    imagens = models.BinaryField(null=True, blank=True)
+    imagens = models.ImageField(upload_to='produtos/', null=True, blank=True)
     pid = models.IntegerField(null=True, blank=True)
     cor = models.CharField(max_length=255, null=True, blank=True)
 
